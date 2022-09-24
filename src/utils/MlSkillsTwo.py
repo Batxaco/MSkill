@@ -34,8 +34,8 @@ class Predictor:
 
             elements = []
 
-            for ele in range(len(self.instance_data[instance][0])):
-                elements.append("ele" + str(ele))
+            for element in range(len(self.instance_data[instance][0])):
+                elements.append("ele" + str(element))
             total_df = pd.DataFrame(self.instance_data[instance], columns=elements)
             instances_list.append(total_df)
 
